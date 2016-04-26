@@ -25,7 +25,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Owp-q6-Dwl">
                                 <rect key="frame" x="20" y="134" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zat-hS-ycp">
                                 <rect key="frame" x="277" y="204" width="47" height="30"/>
@@ -52,7 +52,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-kF-gJX">
                                 <rect key="frame" x="20" y="304" width="560" height="30"/>
-                                <state key="normal" title="patient"/>
+                                <state key="normal" title="Patient"/>
                                 <connections>
                                     <action selector="patientLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLv-O5-DLs"/>
                                 </connections>
@@ -80,6 +80,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gKg-HU-jIu"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Owp-q6-Dwl" id="tUT-sq-q5K"/>
+                        <outlet property="userNameTextField" destination="pAz-8q-3A0" id="h0M-du-IaH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

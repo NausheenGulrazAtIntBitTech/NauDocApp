@@ -38,6 +38,11 @@
 
 - (IBAction)signInButton:(id)sender
 {
+    if ([self.userNameTextField.text isEqualToString:@"Patient"] && [self.passwordTextField.text isEqualToString:@"Patient"]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"PatientStoryboard" bundle:nil];
+        UIViewController *patientViewController = [storyboard instantiateViewControllerWithIdentifier:@"PatientStoryboard"];
+        [self.navigationController showViewController:patientViewController sender:nil];
+    }
     
 }
 
