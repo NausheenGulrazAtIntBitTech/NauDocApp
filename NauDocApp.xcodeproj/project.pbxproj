@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4548FAD41CCF430F002C8DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FAD31CCF430F002C8DB7 /* main.m */; };
+		4548FAD71CCF430F002C8DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FAD61CCF430F002C8DB7 /* AppDelegate.m */; };
+		4548FADA1CCF430F002C8DB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FAD91CCF430F002C8DB7 /* ViewController.m */; };
+		4548FADD1CCF430F002C8DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4548FADB1CCF430F002C8DB7 /* Main.storyboard */; };
+		4548FADF1CCF430F002C8DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4548FADE1CCF430F002C8DB7 /* Assets.xcassets */; };
+		4548FAE21CCF430F002C8DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4548FAE01CCF430F002C8DB7 /* LaunchScreen.storyboard */; };
+		4548FAED1CCF430F002C8DB7 /* NauDocAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FAEC1CCF430F002C8DB7 /* NauDocAppTests.m */; };
+		4548FAF81CCF430F002C8DB7 /* NauDocAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FAF71CCF430F002C8DB7 /* NauDocAppUITests.m */; };
+		4548FB0E1CCF438C002C8DB7 /* DABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB091CCF438C002C8DB7 /* DABaseTableViewController.m */; };
+		4548FB0F1CCF438C002C8DB7 /* DABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB0B1CCF438C002C8DB7 /* DABaseViewController.m */; };
+		4548FB101CCF438C002C8DB7 /* DATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB0D1CCF438C002C8DB7 /* DATableViewCell.m */; };
+		4548FB131CCF439A002C8DB7 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB121CCF439A002C8DB7 /* DataManager.m */; };
+		4548FB1A1CCF4413002C8DB7 /* DALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB191CCF4413002C8DB7 /* DALoginViewController.m */; };
+		4548FB1D1CCF441D002C8DB7 /* DAPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB1C1CCF441D002C8DB7 /* DAPatientViewController.m */; };
+		4548FB211CCF4433002C8DB7 /* ProviderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4548FB1E1CCF4433002C8DB7 /* ProviderStoryboard.storyboard */; };
+		4548FB221CCF4433002C8DB7 /* PracticeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4548FB1F1CCF4433002C8DB7 /* PracticeStoryboard.storyboard */; };
+		4548FB231CCF4433002C8DB7 /* PatientStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4548FB201CCF4433002C8DB7 /* PatientStoryboard.storyboard */; };
+		4548FB291CCF5012002C8DB7 /* DAProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB281CCF5012002C8DB7 /* DAProviderViewController.m */; };
+		4548FB2C1CCF56EB002C8DB7 /* PatientAppoinmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548FB2B1CCF56EB002C8DB7 /* PatientAppoinmentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4548FAE91CCF430F002C8DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4548FAC71CCF430F002C8DB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4548FACE1CCF430F002C8DB7;
+			remoteInfo = NauDocApp;
+		};
+		4548FAF41CCF430F002C8DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4548FAC71CCF430F002C8DB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4548FACE1CCF430F002C8DB7;
+			remoteInfo = NauDocApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4548FACF1CCF430F002C8DB7 /* NauDocApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NauDocApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4548FAD31CCF430F002C8DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4548FAD51CCF430F002C8DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4548FAD61CCF430F002C8DB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4548FAD81CCF430F002C8DB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4548FAD91CCF430F002C8DB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4548FADC1CCF430F002C8DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4548FADE1CCF430F002C8DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4548FAE11CCF430F002C8DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4548FAE31CCF430F002C8DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4548FAE81CCF430F002C8DB7 /* NauDocAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NauDocAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4548FAEC1CCF430F002C8DB7 /* NauDocAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NauDocAppTests.m; sourceTree = "<group>"; };
+		4548FAEE1CCF430F002C8DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4548FAF31CCF430F002C8DB7 /* NauDocAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NauDocAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4548FAF71CCF430F002C8DB7 /* NauDocAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NauDocAppUITests.m; sourceTree = "<group>"; };
+		4548FAF91CCF430F002C8DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4548FB081CCF438C002C8DB7 /* DABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DABaseTableViewController.h; sourceTree = "<group>"; };
+		4548FB091CCF438C002C8DB7 /* DABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DABaseTableViewController.m; sourceTree = "<group>"; };
+		4548FB0A1CCF438C002C8DB7 /* DABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DABaseViewController.h; sourceTree = "<group>"; };
+		4548FB0B1CCF438C002C8DB7 /* DABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DABaseViewController.m; sourceTree = "<group>"; };
+		4548FB0C1CCF438C002C8DB7 /* DATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATableViewCell.h; sourceTree = "<group>"; };
+		4548FB0D1CCF438C002C8DB7 /* DATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATableViewCell.m; sourceTree = "<group>"; };
+		4548FB111CCF439A002C8DB7 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		4548FB121CCF439A002C8DB7 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		4548FB181CCF4413002C8DB7 /* DALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALoginViewController.h; sourceTree = "<group>"; };
+		4548FB191CCF4413002C8DB7 /* DALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALoginViewController.m; sourceTree = "<group>"; };
+		4548FB1B1CCF441D002C8DB7 /* DAPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPatientViewController.h; sourceTree = "<group>"; };
+		4548FB1C1CCF441D002C8DB7 /* DAPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPatientViewController.m; sourceTree = "<group>"; };
+		4548FB1E1CCF4433002C8DB7 /* ProviderStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProviderStoryboard.storyboard; sourceTree = "<group>"; };
+		4548FB1F1CCF4433002C8DB7 /* PracticeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PracticeStoryboard.storyboard; sourceTree = "<group>"; };
+		4548FB201CCF4433002C8DB7 /* PatientStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PatientStoryboard.storyboard; sourceTree = "<group>"; };
+		4548FB271CCF5012002C8DB7 /* DAProviderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProviderViewController.h; sourceTree = "<group>"; };
+		4548FB281CCF5012002C8DB7 /* DAProviderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAProviderViewController.m; sourceTree = "<group>"; };
+		4548FB2A1CCF56EB002C8DB7 /* PatientAppoinmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientAppoinmentViewController.h; sourceTree = "<group>"; };
+		4548FB2B1CCF56EB002C8DB7 /* PatientAppoinmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientAppoinmentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4548FACC1CCF430F002C8DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAE51CCF430F002C8DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAF01CCF430F002C8DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4548FAC61CCF430F002C8DB7 = {
+			isa = PBXGroup;
+			children = (
+				4548FAD11CCF430F002C8DB7 /* NauDocApp */,
+				4548FAEB1CCF430F002C8DB7 /* NauDocAppTests */,
+				4548FAF61CCF430F002C8DB7 /* NauDocAppUITests */,
+				4548FAD01CCF430F002C8DB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4548FAD01CCF430F002C8DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4548FACF1CCF430F002C8DB7 /* NauDocApp.app */,
+				4548FAE81CCF430F002C8DB7 /* NauDocAppTests.xctest */,
+				4548FAF31CCF430F002C8DB7 /* NauDocAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4548FAD11CCF430F002C8DB7 /* NauDocApp */ = {
+			isa = PBXGroup;
+			children = (
+				4548FAD51CCF430F002C8DB7 /* AppDelegate.h */,
+				4548FAD61CCF430F002C8DB7 /* AppDelegate.m */,
+				4548FAD81CCF430F002C8DB7 /* ViewController.h */,
+				4548FAD91CCF430F002C8DB7 /* ViewController.m */,
+				4548FADB1CCF430F002C8DB7 /* Main.storyboard */,
+				4548FB1E1CCF4433002C8DB7 /* ProviderStoryboard.storyboard */,
+				4548FB1F1CCF4433002C8DB7 /* PracticeStoryboard.storyboard */,
+				4548FB201CCF4433002C8DB7 /* PatientStoryboard.storyboard */,
+				4548FADE1CCF430F002C8DB7 /* Assets.xcassets */,
+				4548FAE01CCF430F002C8DB7 /* LaunchScreen.storyboard */,
+				4548FAE31CCF430F002C8DB7 /* Info.plist */,
+				4548FB071CCF433D002C8DB7 /* ViewController */,
+				4548FB051CCF433D002C8DB7 /* BaseViewController */,
+				4548FB061CCF433D002C8DB7 /* DataManager */,
+				4548FAD21CCF430F002C8DB7 /* Supporting Files */,
+			);
+			path = NauDocApp;
+			sourceTree = "<group>";
+		};
+		4548FAD21CCF430F002C8DB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4548FAD31CCF430F002C8DB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4548FAEB1CCF430F002C8DB7 /* NauDocAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4548FAEC1CCF430F002C8DB7 /* NauDocAppTests.m */,
+				4548FAEE1CCF430F002C8DB7 /* Info.plist */,
+			);
+			path = NauDocAppTests;
+			sourceTree = "<group>";
+		};
+		4548FAF61CCF430F002C8DB7 /* NauDocAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4548FAF71CCF430F002C8DB7 /* NauDocAppUITests.m */,
+				4548FAF91CCF430F002C8DB7 /* Info.plist */,
+			);
+			path = NauDocAppUITests;
+			sourceTree = "<group>";
+		};
+		4548FB051CCF433D002C8DB7 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB0A1CCF438C002C8DB7 /* DABaseViewController.h */,
+				4548FB0B1CCF438C002C8DB7 /* DABaseViewController.m */,
+				4548FB081CCF438C002C8DB7 /* DABaseTableViewController.h */,
+				4548FB091CCF438C002C8DB7 /* DABaseTableViewController.m */,
+				4548FB0C1CCF438C002C8DB7 /* DATableViewCell.h */,
+				4548FB0D1CCF438C002C8DB7 /* DATableViewCell.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		4548FB061CCF433D002C8DB7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB111CCF439A002C8DB7 /* DataManager.h */,
+				4548FB121CCF439A002C8DB7 /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		4548FB071CCF433D002C8DB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB141CCF43F3002C8DB7 /* Login */,
+				4548FB151CCF43F3002C8DB7 /* Patient */,
+				4548FB161CCF43F3002C8DB7 /* Practice */,
+				4548FB171CCF43F3002C8DB7 /* Provider */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4548FB141CCF43F3002C8DB7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB181CCF4413002C8DB7 /* DALoginViewController.h */,
+				4548FB191CCF4413002C8DB7 /* DALoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4548FB151CCF43F3002C8DB7 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB1B1CCF441D002C8DB7 /* DAPatientViewController.h */,
+				4548FB1C1CCF441D002C8DB7 /* DAPatientViewController.m */,
+				4548FB2A1CCF56EB002C8DB7 /* PatientAppoinmentViewController.h */,
+				4548FB2B1CCF56EB002C8DB7 /* PatientAppoinmentViewController.m */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		4548FB161CCF43F3002C8DB7 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		4548FB171CCF43F3002C8DB7 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4548FB271CCF5012002C8DB7 /* DAProviderViewController.h */,
+				4548FB281CCF5012002C8DB7 /* DAProviderViewController.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4548FACE1CCF430F002C8DB7 /* NauDocApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4548FAFC1CCF430F002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocApp" */;
+			buildPhases = (
+				4548FACB1CCF430F002C8DB7 /* Sources */,
+				4548FACC1CCF430F002C8DB7 /* Frameworks */,
+				4548FACD1CCF430F002C8DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NauDocApp;
+			productName = NauDocApp;
+			productReference = 4548FACF1CCF430F002C8DB7 /* NauDocApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4548FAE71CCF430F002C8DB7 /* NauDocAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4548FAFF1CCF4310002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocAppTests" */;
+			buildPhases = (
+				4548FAE41CCF430F002C8DB7 /* Sources */,
+				4548FAE51CCF430F002C8DB7 /* Frameworks */,
+				4548FAE61CCF430F002C8DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4548FAEA1CCF430F002C8DB7 /* PBXTargetDependency */,
+			);
+			name = NauDocAppTests;
+			productName = NauDocAppTests;
+			productReference = 4548FAE81CCF430F002C8DB7 /* NauDocAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4548FAF21CCF430F002C8DB7 /* NauDocAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4548FB021CCF4310002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocAppUITests" */;
+			buildPhases = (
+				4548FAEF1CCF430F002C8DB7 /* Sources */,
+				4548FAF01CCF430F002C8DB7 /* Frameworks */,
+				4548FAF11CCF430F002C8DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4548FAF51CCF430F002C8DB7 /* PBXTargetDependency */,
+			);
+			name = NauDocAppUITests;
+			productName = NauDocAppUITests;
+			productReference = 4548FAF31CCF430F002C8DB7 /* NauDocAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4548FAC71CCF430F002C8DB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Nausheen;
+				TargetAttributes = {
+					4548FACE1CCF430F002C8DB7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					4548FAE71CCF430F002C8DB7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4548FACE1CCF430F002C8DB7;
+					};
+					4548FAF21CCF430F002C8DB7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4548FACE1CCF430F002C8DB7;
+					};
+				};
+			};
+			buildConfigurationList = 4548FACA1CCF430F002C8DB7 /* Build configuration list for PBXProject "NauDocApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4548FAC61CCF430F002C8DB7;
+			productRefGroup = 4548FAD01CCF430F002C8DB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4548FACE1CCF430F002C8DB7 /* NauDocApp */,
+				4548FAE71CCF430F002C8DB7 /* NauDocAppTests */,
+				4548FAF21CCF430F002C8DB7 /* NauDocAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4548FACD1CCF430F002C8DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4548FB211CCF4433002C8DB7 /* ProviderStoryboard.storyboard in Resources */,
+				4548FB231CCF4433002C8DB7 /* PatientStoryboard.storyboard in Resources */,
+				4548FAE21CCF430F002C8DB7 /* LaunchScreen.storyboard in Resources */,
+				4548FADF1CCF430F002C8DB7 /* Assets.xcassets in Resources */,
+				4548FB221CCF4433002C8DB7 /* PracticeStoryboard.storyboard in Resources */,
+				4548FADD1CCF430F002C8DB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAE61CCF430F002C8DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAF11CCF430F002C8DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4548FACB1CCF430F002C8DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4548FB1D1CCF441D002C8DB7 /* DAPatientViewController.m in Sources */,
+				4548FADA1CCF430F002C8DB7 /* ViewController.m in Sources */,
+				4548FB0E1CCF438C002C8DB7 /* DABaseTableViewController.m in Sources */,
+				4548FB131CCF439A002C8DB7 /* DataManager.m in Sources */,
+				4548FAD71CCF430F002C8DB7 /* AppDelegate.m in Sources */,
+				4548FB0F1CCF438C002C8DB7 /* DABaseViewController.m in Sources */,
+				4548FB2C1CCF56EB002C8DB7 /* PatientAppoinmentViewController.m in Sources */,
+				4548FB101CCF438C002C8DB7 /* DATableViewCell.m in Sources */,
+				4548FAD41CCF430F002C8DB7 /* main.m in Sources */,
+				4548FB291CCF5012002C8DB7 /* DAProviderViewController.m in Sources */,
+				4548FB1A1CCF4413002C8DB7 /* DALoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAE41CCF430F002C8DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4548FAED1CCF430F002C8DB7 /* NauDocAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4548FAEF1CCF430F002C8DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4548FAF81CCF430F002C8DB7 /* NauDocAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4548FAEA1CCF430F002C8DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4548FACE1CCF430F002C8DB7 /* NauDocApp */;
+			targetProxy = 4548FAE91CCF430F002C8DB7 /* PBXContainerItemProxy */;
+		};
+		4548FAF51CCF430F002C8DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4548FACE1CCF430F002C8DB7 /* NauDocApp */;
+			targetProxy = 4548FAF41CCF430F002C8DB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4548FADB1CCF430F002C8DB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4548FADC1CCF430F002C8DB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4548FAE01CCF430F002C8DB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4548FAE11CCF430F002C8DB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4548FAFA1CCF430F002C8DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4548FAFB1CCF430F002C8DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4548FAFD1CCF430F002C8DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NauDocApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4548FAFE1CCF430F002C8DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NauDocApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4548FB001CCF4310002C8DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NauDocAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NauDocApp.app/NauDocApp";
+			};
+			name = Debug;
+		};
+		4548FB011CCF4310002C8DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NauDocAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NauDocApp.app/NauDocApp";
+			};
+			name = Release;
+		};
+		4548FB031CCF4310002C8DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NauDocAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NauDocApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4548FB041CCF4310002C8DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NauDocAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INTBIT.NauDocAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NauDocApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4548FACA1CCF430F002C8DB7 /* Build configuration list for PBXProject "NauDocApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4548FAFA1CCF430F002C8DB7 /* Debug */,
+				4548FAFB1CCF430F002C8DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4548FAFC1CCF430F002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4548FAFD1CCF430F002C8DB7 /* Debug */,
+				4548FAFE1CCF430F002C8DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4548FAFF1CCF4310002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4548FB001CCF4310002C8DB7 /* Debug */,
+				4548FB011CCF4310002C8DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4548FB021CCF4310002C8DB7 /* Build configuration list for PBXNativeTarget "NauDocAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4548FB031CCF4310002C8DB7 /* Debug */,
+				4548FB041CCF4310002C8DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4548FAC71CCF430F002C8DB7 /* Project object */;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Patient View Controller-->
+        <scene sceneID="l5u-6H-PFJ">
+            <objects>
+                <viewController storyboardIdentifier="ProviderStoryboard" id="gR0-S7-VCe" customClass="DAPatientViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YRA-zv-Ave"/>
+                        <viewControllerLayoutGuide type="bottom" id="Acq-wW-Hds"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21c-zc-3F1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRZ-ky-SrE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="607"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="default" id="DFY-Jk-NSv" customClass="DATableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DFY-Jk-NSv" id="Sc5-oj-RKH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBT-gA-rIc">
+                                                    <rect key="frame" x="10" y="10" width="580" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GBT-gA-rIc" firstAttribute="leading" secondItem="Sc5-oj-RKH" secondAttribute="leading" constant="10" id="KAC-RV-wfb"/>
+                                                <constraint firstAttribute="bottom" secondItem="GBT-gA-rIc" secondAttribute="bottom" constant="10" id="PHM-O6-Mef"/>
+                                                <constraint firstAttribute="trailing" secondItem="GBT-gA-rIc" secondAttribute="trailing" constant="10" id="bQ0-by-vAF"/>
+                                                <constraint firstItem="GBT-gA-rIc" firstAttribute="top" secondItem="Sc5-oj-RKH" secondAttribute="top" constant="10" id="yAE-pA-hfx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="patientList" destination="GBT-gA-rIc" id="dug-Rm-X70"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gR0-S7-VCe" id="J6K-21-SxF"/>
+                                    <outlet property="delegate" destination="gR0-S7-VCe" id="TWV-Il-CaK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2rD-bc-Irw">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="aaS-tQ-PWz">
+                            <connections>
+                                <action selector="home:" destination="gR0-S7-VCe" id="d8J-oy-w6b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="BRZ-ky-SrE" id="YrM-aB-CXf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4GP-UA-Mre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="445"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hwx-cg-bKC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HUt-Sv-zND" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u48-DV-jl9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gR0-S7-VCe" kind="relationship" relationship="rootViewController" id="2Wr-bP-atj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmv-aa-Mdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="445"/>
+        </scene>
+    </scenes>
+</document>
